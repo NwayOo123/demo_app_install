@@ -11,12 +11,12 @@ import jp.co.interfactory.ebisu.app.dataaccess.DataAccessClient;
  * @author Interfactory
  */
 public class DataAccessClientHolder {
-	private static final String APP_CD = "OFFSHORE_09082023"; // アプリコード
+	private static final String APP_CD = "APP_LIB_TEST"; // アプリコード
 	public static String getAppCd() {return APP_CD;}
-	private static final String APP_PASS = "b333c5f41a302077330a103448a047b7"; // アプリパスワード
+	private static final String APP_PASS = ""; // アプリパスワード
 	public static String getAppPass() {return APP_PASS;}
-	private static String EBISU_API_HOST = "https://demo-admin.ebisumart.com/"; // えびすマート（API呼び出し）のルートURLです。
-	private static String EBISU_SCREEN_HOST = "https://demo-admin.ebisumart.com/"; // えびすマート（認証コード取得用）のルートURLです。
+	private static String EBISU_API_HOST = "https://service-dev.ebisumart.com/"; // えびすマート（API呼び出し）のルートURLです。
+	private static String EBISU_SCREEN_HOST = "https://service-dev.ebisumart.com/"; // えびすマート（認証コード取得用）のルートURLです。
 	
 	private static volatile DataAccessClient client = null;
 	// 実際はリフレッシュトークンはDB等に保持すべきですが、この例ではMapに持っています
